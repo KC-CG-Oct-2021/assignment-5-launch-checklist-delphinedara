@@ -17,15 +17,16 @@ window.addEventListener("load", function(){
         let diameter = planet.diameter;
         let star = planet.star;
         let distance = planet.distance;
-        let imageUrl = planet.image;
         let moons = planet.moons;
+        let imageUrl = planet.image;
+        
         addDestinationInfo (document, name, diameter, star, distance, moons, imageUrl);
 
     })
   
 
      let list = document.getElementById("faultyItems");
-     list.style.visibility = 'hidden';
+     list.style.visibility = 'visible';
 
      let form = document.querySelector("form")
      form.addEventListener("submit", function(event){
