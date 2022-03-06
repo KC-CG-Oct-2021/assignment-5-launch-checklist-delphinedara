@@ -26,7 +26,7 @@ window.addEventListener("load", function(){
   
 
      let list = document.getElementById("faultyItems");
-     list.style.visibility = 'visible';
+     list.style.visibility = 'hidden';
 
      let form = document.querySelector("form")
      form.addEventListener("submit", function(event){
@@ -37,6 +37,10 @@ window.addEventListener("load", function(){
         let cargoLevel = document.querySelector("input[name=cargoMass]").value;
         formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
     });
+
     
+
+    
+
 
 });
