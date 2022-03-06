@@ -22,7 +22,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 //validateInput(). validateInput() should take in a string as a parameter and return "Empty", "Not a Number", or "Is a Number" as appropriate
 
 function validateInput(testInput) {
-    if (testInput ===''){
+    if (testInput ==='' || testInput===null){
         return `Empty`;
     }else if (!isNaN(Number(testInput))){
         return `Is a Number`;
@@ -62,7 +62,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         
     if(fuelLevel.value < 10000 && cargoLevel.value <= 10000){
         list.style.visibility = `visible`;
-        launchStatus.style.color = 'rgb(199, 37, 78';
+        launchStatus.style.color = 'rgb(199,37,78)';
         launchStatus.innerHTML = `Shuttle Not Ready for Launch`;
         fuelStatus.innerHTML = `Fuel level too low for launch`;
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
